@@ -1,0 +1,56 @@
+{
+  "name": "react-nodejs-app",
+  "author": "Christopher McCormack <mack.developer@gmail.com> (https://mackville.net/)",
+  "description": "Boilerplate for React App served with Node.js",
+  "keywords": [
+    "Node.js",
+    "Node",
+    "React",
+    "Boilerplate",
+    "express"
+  ],
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "main": "server.js",
+  "homepage": "https://github.com/cmccormack/react-nodejs-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/cmccormack/react-nodejs-boilerplate/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmccormack/react-nodejs-boilerplate.git"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "scripts": {
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test",
+    "react-eject": "react-scripts eject",
+    "start": "node server/server.js",
+    "dev": "concurrently --kill-others-on-fail 'npm run react-start' 'npm run start'"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
+    "helmet": "^3.14.0",
+    "mongoose": "^5.3.1",
+    "node-fetch": "^2.2.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1",
+    "react-scripts": "2.0.5"
+  }
+}
